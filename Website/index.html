@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependency Checker Setup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="page">
+
+    <div class="card title-card">
+      <h1>Dependency Checker Setup</h1>
+      <p class="subtitle">Made by <a href="https://terrorized.dev" target="_blank">@iterrorized</a></p>
+      <p class="support-link">Need support? <a href="https://discord.gg/X9sgs7KCAv" target="_blank">Create a ticket here.</a></p>
+    </div>
+
+    <div class="card instructions-card">
+      <h2>Getting Started</h2>
+      <ol>
+        <li>Click <strong>Add to VCC</strong> below to add this listing</li>
+        <li>In VCC, add <strong>Dependency Checker Setup</strong> to your project</li>
+        <li>In Unity, open <strong>Terrorized/Installers/Dependency Checker Setup</strong> from the top menu</li>
+        <li>Enter your license key and click <strong>Verify License</strong></li>
+        <li>Set your creator name, splash, socials and dependencies, then click <strong>Download and Install</strong></li>
+      </ol>
+      <p class="full-docs-link">
+        <a href="https://docs.terrorized.dev/s/d50c8d78-f3e4-4111-ab2f-feba797c29d1" target="_blank">
+          <strong>View full instructions and documentation</strong>
+        </a>
+      </p>
+    </div>
+
+    <div class="card vcc-card">
+      <h2>Install</h2>
+      <div class="vcc-url-row">
+        <input id="vccUrlField" class="vcc-url-field" readonly value="{{ listingInfo.Url }}">
+        <button class="copy-btn" id="vccUrlFieldCopy">Copy</button>
+      </div>
+      <button class="add-to-vcc-btn" id="vccAddRepoButton">Add to VCC</button>
+    </div>
+
+    <div class="card drm-card">
+      <p>
+        This product uses <strong>Terrorized's DRM Licensing System</strong>.
+        By verifying a license, you agree to the
+        <a href="https://drm.terrorized.dev/privacy" target="_blank">Privacy Policy</a>.
+      </p>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

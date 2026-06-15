@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: #050508;
+  color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(1100px 600px at 50% -10%, rgba(120, 90, 200, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 100%, rgba(70, 60, 120, 0.12), transparent 55%),
+    #050508;
+}
+
+.background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: 560px;
+}
+
+.card {
+  background: rgba(12, 12, 18, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-card {
+  text-align: center;
+}
+
+.title-card h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.support-link {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  color: #b9a3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.instructions-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.instructions-card ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.instructions-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.full-docs-link {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.vcc-card {
+  text-align: center;
+}
+
+.vcc-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vcc-url-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.vcc-url-field {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.75rem;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.copy-btn,
+.add-to-vcc-btn {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  padding: 0 1rem;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.add-to-vcc-btn {
+  width: 100%;
+  height: 44px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #8b6fe0, #b9a3ff);
+  color: #0a0a12;
+  border: none;
+}
+
+.add-to-vcc-btn:hover {
+  filter: brightness(1.08);
+}
+
+.drm-card {
+  text-align: center;
+  padding: 1.25rem 2rem;
+}
+
+.drm-card p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 2rem 0.75rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .title-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .vcc-url-row {
+    flex-direction: column;
+  }
+}

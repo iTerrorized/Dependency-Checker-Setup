@@ -1,0 +1,22 @@
+{
+    "name": "Dependency Checker Setup",
+    "id": "dev.terrorized.DependencyCheckerSetupListing",
+    "url": "https://iterrorized.github.io/Dependency-Checker-Setup/index.json",
+    "author": {
+        "email": "xterrorized@outlook.com",
+        "name": "Terrorized",
+        "url": "https://terrorized.dev"
+    },
+    "description": "Build and ship a branded dependency checker for your VRChat assets.",
+    "infoLink": {
+        "url": "https://terrorized.dev",
+        "text": "Website"
+    },
+    "bannerUrl": "banner.png",
+    "githubRepos": [
+        "iTerrorized/dev.terrorized.drm",
+        "iTerrorized/dev.terrorized.dependencycheckersetup"
+    ],
+    "packages": [],
+    "lastUpdated": "2026-06-15"
+}
