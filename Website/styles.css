@@ -85,7 +85,7 @@ h2 {
 }
 
 a {
-  color: #b9a3ff;
+  color: #b1bbffcc;
   text-decoration: none;
 }
 
@@ -169,7 +169,7 @@ a:hover {
   width: 100%;
   height: 44px;
   font-size: 1rem;
-  background: linear-gradient(135deg, #8b6fe0, #b9a3ff);
+  background: linear-gradient(135deg, #8b6fe0, #b1bbffcc);
   color: #0a0a12;
   border: none;
 }
